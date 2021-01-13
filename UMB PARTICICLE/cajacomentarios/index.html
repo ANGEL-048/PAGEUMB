@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de comentarios</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="https://file.myfontastic.com/tc26fJHv8scB3d4vHQRRsV/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:/Users/Luis/Desktop/caja-de-comentarios-HMTL5-CSS3-JQUERY-master/caja-de-comentarios-HMTL5-CSS3-JQUERY-master/css/principal.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+   <div class="background">
+       <img src="image/bg1.jpg" alt="">
+       <div class="capa"></div>
+   </div>
+    <main>
+        <h1>ESCRIBE DUDAS QUEJAS O ALGUN COMENTARIO</h1>
+        <header>
+
+            <div class="header-content">
+    
+                <div class="logo">
+                    <h1>UMB</h1>
+                </div>
+    
+                <div class="menu" id="show-menu">
+    
+                    <nav>
+                        <ul>
+                            <li><a href="#"> <i class="fas fa-home"></i> Inicio</a></li>
+                            <li class="menu-selected"><a href="blog.html" class="text-menu-selected"> 
+                                <i class="fas fa-file-alt"></i>Info</a></li>
+                            <li><a href="#"> <i class="fas fa-headset"></i> Contacto</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+
+                <div id="ctn-icon-search">
+                    <i class="fas fa-search" id="icon-search"></i>
+                </div>
+    
+            </div>
+    
+            <div id="icon-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+        </header>
+        <hr class="line">
+        <div class="container-comments">
+           
+            <div class="comments">
+               
+                <div class="photo-perfil">
+                    <img src="image/perfil.png" alt="">
+                </div>
+                
+                <div class="info-comments">
+                   
+                    <div class="header">
+                        <h4>LUIS ANGEL SANCHEZ SANCHEZ</h4>
+                        <h5>12 DE NOVIEMBRE DEL 2020</h5>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas reiciendis, hic voluptatibus maxime, delectus fugiat, aspernatur nisi saepe, temporibus nemo sequi sint pariatur ratione! Repellat tempora doloremque illo necessitatibus.</p>
+                    
+                    <div class="footer">
+                       
+                        <h5 class="request">Responder</h5>
+                        <label class="icon-heart"></label>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-comments-request">
+           
+            <div class="comments-request">
+               
+                <div class="photo-perfil-request">
+                    <img src="image/perfil2.png" alt="">
+                </div>
+                
+                <div class="info-comments-request">
+                   
+                    <div class="header">
+                        <h4>LUIS ANGEL SANCHEZ SANCHEZ</h4>
+                        <h5>12 DE NOMVIEMBRE DEL 2020</h5>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas reiciendis, hic voluptatibus maxime, delectus fugiat, aspernatur nisi saepe, temporibus nemo sequi sint pariatur ratione! Repellat tempora doloremque illo necessitatibus.</p>
+                    
+                    <div class="footer">
+                       
+                        <h5 class="request">Responder</h5>
+                        <label class="icon-heart"></label>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-comments">
+           
+            <div class="comments">
+               
+                <div class="photo-perfil">
+                    <img src="image/perfil.png" alt="">
+                </div>
+                
+                <div class="info-comments">
+                   
+                    <div class="header">
+                        <h4>LUIS ANGEL SANCHEZ SANCHEZ</h4>
+                        <h5>12 DE NOVIEMBRE DEL 2020</h5>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas reiciendis, hic voluptatibus maxime, delectus fugiat, aspernatur nisi saepe, temporibus nemo sequi sint pariatur ratione! Repellat tempora doloremque illo necessitatibus.</p>
+                    
+                    <div class="footer">
+                       
+                        <h5 class="request">Responder</h5>
+                        <label class="icon-heart"></label>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="container-comments">
+           
+            <div class="comments">
+               
+                <div class="photo-perfil">
+                    <img src="image/perfil2.jpg" alt="">
+                </div>
+                
+                <div class="info-comments">
+                   
+                    <div class="header">
+                        <h4>LUIS ANGEL SANCHEZ SANCHEZ</h4>
+                        <h5>12 DE NOVIEMBRE DEL 2020</h5>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas reiciendis, hic voluptatibus maxime, delectus fugiat, aspernatur nisi saepe, temporibus nemo sequi sint pariatur ratione! Repellat tempora doloremque illo necessitatibus.</p>
+                    
+                    <div class="footer">
+                       
+                        <h5 class="request">Responder</h5>
+                        <label class="icon-heart"></label>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+    <div class="capa-data"></div>
+    <div class="container-data"> <!--           #####################################3           -->
+<form action="guardarcomentarios.php" method="POST" enctype="multipart/form-data">
+    <div class="photo-input">
+        <div class="perfil-photo">
+            <img src="image/perfil2.jpg" id="photoSelect" alt="" name = "imagen">
+        </div>
+        <input type="file" name="imagen" id="loadPhoto">
+        <input type="text" name ="nombre" placeholder="Su nombre">
+    </div>
+        <textarea class="mensaje" name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+        <button type="submit" class="btn-comment" name="comentar">Comentar</button>
+    </div>
+</form>
+
+    <script src="js/jquery.js"></script>z
+    <script src="js/script.js"></script>
+</body>
+</html>
